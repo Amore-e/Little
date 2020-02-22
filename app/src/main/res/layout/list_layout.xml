@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/l"
+        android:layout_marginLeft="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="简.爱"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/write_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="作者：夏洛蒂.勃朗特"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>

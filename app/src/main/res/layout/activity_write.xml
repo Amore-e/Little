@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/head_bg"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/edit_text1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/appBarLayout1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="30dp"
+        android:text="标题..."
+        android:hint="Type something here"
+        android:minLines="2"
+        />
+
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/edit_text1"
+        android:textColor="#333333"
+        android:textSize="20dp"
+        android:text="正文..."
+        android:hint="Type something here"
+        android:minLines="8"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_text2"
+        >
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        tools:ignore="MissingConstraints"
+        >
+    <TextView
+        android:id="@+id/text1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/edit_text2"
+        />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/text1"
+            />
+    <ImageView
+        android:id="@+id/image_add1"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:layout_below="@id/text2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_add1"
+        android:background="#D9D9D9"
+        >
+        <ImageButton
+            android:id="@+id/image_button1"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:src="@drawable/time_foreground"
+            />
+        <ImageButton
+            android:id="@+id/image_button2"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:src="@drawable/photo_foreground"
+            />
+        <ImageButton
+            android:id="@+id/image_button3"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:src="@drawable/place_foreground"
+            />
+    </LinearLayout>
+   </com.google.android.material.appbar.AppBarLayout>
+</FrameLayout>
+</RelativeLayout>

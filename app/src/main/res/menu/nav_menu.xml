@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_foreground"
+            android:title="主页"
+            />
+        <item
+            android:id="@+id/nav_read"
+            android:icon="@drawable/read_foreground"
+            android:title="阅读"
+            />
+        <item
+            android:id="@+id/nav_shelf"
+            android:icon="@drawable/person_foreground"
+            android:title="书架"
+            />
+        <item
+            android:id="@+id/nav_note"
+            android:icon="@drawable/write_foreground"
+            android:title="小本子"/>
+    </group>>
+</menu>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/viewpager1"
+        android:background="#FFFFFF"
+        app:layout_constraintVertical_bias="1.0"
+        app:tabIndicatorColor="#F2F2F2"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#F2F2F2"
+        tools:layout_editor_absoluteX="103dp">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fa_bar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#3A5FCD"
+        android:src="@drawable/foreward_foreground"
+        android:scaleType="center"
+        app:layout_anchor="@id/viewpager1"
+        app:layout_anchorGravity="center|bottom"
+        tools:ignore="MissingConstraints" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

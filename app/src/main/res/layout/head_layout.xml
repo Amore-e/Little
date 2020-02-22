@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:padding="10dp"
+    android:background="@drawable/head_bg">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/head_foreground"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/icon_image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="昵称"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/user_sign"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="个性签名"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        />
+
+
+
+
+</RelativeLayout>
