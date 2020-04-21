@@ -30,7 +30,7 @@
         android:gravity="center"
         android:textColor="#333333"
         android:textSize="30dp"
-        android:text="标题..."
+
         android:hint="Type something here"
         android:minLines="2"
         />
@@ -42,7 +42,7 @@
         android:layout_below="@id/edit_text1"
         android:textColor="#333333"
         android:textSize="20dp"
-        android:text="正文..."
+
         android:hint="Type something here"
         android:minLines="8"
         />

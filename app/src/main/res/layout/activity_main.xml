@@ -68,9 +68,6 @@
             android:src="@drawable/add_foreground"
             android:scaleType="center"/>
 
-
-
-
     </FrameLayout>
 
     <com.google.android.material.navigation.NavigationView

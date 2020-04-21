@@ -19,7 +19,6 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -34,7 +33,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.baidu.location.BDAbstractLocationListener;
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
@@ -307,13 +305,13 @@ public class WriteActivity extends AppCompatActivity {
     private class MyLocationListener  implements BDLocationListener {
         @Override
         public void onReceiveLocation(BDLocation Location) {
-            try {
+            //try {
                 StringBuilder currentPosition = new StringBuilder();
                 currentPosition.append(Location.getCountry()).append(" ").append(Location.getProvince()).append(" ").append(Location.getCity()).append(" ").append(Location.getDistrict()).append(" ").append(Location.getStreet()).append(" ");
                 text2.setText(currentPosition);
-            }catch(NullPointerException e){
-                e.printStackTrace();
-            }
+           // }catch(NullPointerException e){
+              //  e.printStackTrace();
+           // }
 
         }
     }

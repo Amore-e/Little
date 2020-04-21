@@ -50,13 +50,13 @@ public class SubReadActivity extends AppCompatActivity {
         }
 
         collapsingToolbar.setTitle(bookName);
-        Glide.with(this).load(bookImageId).into(bookImageView);
+        Glide.with(this).load(bookImageId).into(bookImageView);//加载书的图片
 
         WebView webView=(WebView)findViewById(R.id.web_view);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
         switch (bookImageId){
-            case R.drawable.l:
+            case R.drawable.l: //简爱
                 webView.loadUrl("http://www.newxue.com/gkmz/jianai/");
                 break;
             case R.drawable.b:

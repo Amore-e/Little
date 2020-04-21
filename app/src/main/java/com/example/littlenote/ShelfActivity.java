@@ -83,10 +83,8 @@ public class ShelfActivity extends Activity {
             String id = jsonObject.getString("title");
             JSONArray jsonArray = jsonObject.getJSONArray("sentence");
 
-
             sentences = new ArrayList<>();
             sentences.add(id);
-
 
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject2 = (JSONObject) jsonArray.get(i);
